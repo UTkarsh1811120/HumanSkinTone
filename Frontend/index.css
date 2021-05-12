@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&family=Ubuntu:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
+
 :root{
     --primary-color: rgb(177, 103, 226);
 }
 
 body{
     background-color: var(--primary-color);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.73), rgba(177, 103, 226, 0.6059) 50.00%, rgba(0, 0, 0, 0.73) 100%), url(21b67105-eb2f-4b54-9f9f-53f0a1ef96d2.jpg) no-repeat fixed center;
+    background-size: cover;
+    height: 100vh;
 }
 
 .btn{
@@ -15,4 +20,31 @@ body{
 .btn:hover{
     background-color: var(--primary-color);
     color: rgb(0, 0, 0);
+}
+
+#Header{
+    position: relative;
+    left: 15vw;
+    margin: 8vh 0;
+    padding: 30px;
+    color: #d8ebe4;
+    width: 70vw;
+    background-color: rgba(202, 145, 255, 0.349);
+    border-radius: 10px;
+    box-shadow: 5px 4px 4px rgba(255, 255, 255, 0.63);
+}
+
+#Header h1{
+    font-variant: small-caps;
+    text-align: center;
+    text-shadow: 3px 3px 3px violet;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 46px;
+}
+
+#Header p, h4{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
 }
