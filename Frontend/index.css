@@ -1,0 +1,18 @@
+:root{
+    --primary-color: rgb(177, 103, 226);
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+.btn{
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+}
+
+.btn:hover{
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+}
