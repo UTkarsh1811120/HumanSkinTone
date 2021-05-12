@@ -22,7 +22,7 @@ body{
     color: rgb(0, 0, 0);
 }
 
-#Header{
+.container{
     position: relative;
     left: 15vw;
     margin: 8vh 0;
@@ -48,3 +48,11 @@ body{
     font-family: 'Ubuntu', sans-serif;
     font-style: italic;
 }
+
+@media only screen and (max-width: 800px) {
+    .collapse {
+        background: linear-gradient(black, rgba(48, 48, 48, 0.753)); 
+        padding: 15px; 
+        border-radius: 6px;
+    }
+  }
