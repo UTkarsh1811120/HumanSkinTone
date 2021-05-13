@@ -33,9 +33,7 @@ body{
 } */
 =======
 .container{
-    position: relative;
-    left: 15vw;
-    margin: 8vh 0;
+    margin: 8vh 15vw;
     padding: 30px;
     color: #d8ebe4;
     width: 70vw;
