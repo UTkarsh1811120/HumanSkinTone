@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&family=Ubuntu:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trirong&family=Poppins:ital,wght@0,400;1,500&family=Ubuntu:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
 
 :root{
     --primary-color: rgb(177, 103, 226);
@@ -9,6 +9,7 @@ body{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.73), rgba(177, 103, 226, 0.6059) 50.00%, rgba(0, 0, 0, 0.73) 100%), url(21b67105-eb2f-4b54-9f9f-53f0a1ef96d2.jpg) no-repeat fixed center;
     background-size: cover;
     height: 100vh;
+    width: 100%;
 }
 
 .btn{
@@ -47,4 +48,63 @@ body{
 #Header p, h4{
     font-family: 'Ubuntu', sans-serif;
     font-style: italic;
+}
+#results
+{
+    width: 350px;
+    height:350px;
+}
+#my_camera
+{
+    display: inline-block;
+}
+#accept
+{
+    font-family: "Trirong", serif;
+}
+#display
+{
+    text-align: center;
+    font-family: "Trirong", serif;
+    color: white;
+    margin-top: 40px;
+}
+#img
+{
+    float: left;
+    width: 50%;
+}
+#user
+{
+    text-align: center;    
+    float: left;
+    width: 50%;
+    font-family: "Trirong", serif;
+}
+.btn-light
+{
+    margin-top: 8px;
+    text-align: center;
+}
+#heading
+{    
+    font-variant: small-caps;
+    text-align: center;
+    text-shadow: 1.5px 1.5px 1.5px white;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 46px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+#heading1
+{    
+    font-variant: small-caps;
+    text-align: center;
+    color: white;
+    text-shadow: 1.5px 1.5px 1.5px red;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 700;
 }
