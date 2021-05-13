@@ -108,6 +108,8 @@ body{
     font-style: italic;
     font-weight: 700;
 }
+/* <<<<<<< patch-3 */
+=======
 #heading2
 {    
     font-variant: small-caps;
@@ -126,3 +128,4 @@ body{
 {
     margin-top: 20px;
 }
+/* >>>>>>> main */
