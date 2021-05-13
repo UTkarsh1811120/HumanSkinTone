@@ -1,0 +1,54 @@
+:root{
+    --primary-color: rgb(177, 103, 226);
+}
+
+.btn{
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+}
+
+.btn:hover{
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+}
+
+body{
+    background: url(copy-space-blue-circuits-digital-background_23-2148821699.jpg) no-repeat fixed center;
+    background-size: cover;
+    /* background-position: center; */
+    /* height: 100vh; */
+}
+
+.a{
+    position: absolute;
+    width: 60vw;
+    left: 20vw;
+    top: 30vh;
+}
+
+.a1{
+    text-align: center;
+    padding-top: 40px;
+    color: #ffffff;
+    text-shadow: 3px 2px 4px violet;
+}
+
+.c{
+    background: rgba(73, 73, 73, 0.658);
+    border-radius: 10px;
+    position: absolute;
+    top: 90vh;
+    left: 15vw;
+    right: 15vw;
+    width: 70vw;
+    padding: 5vh 5vw;
+}
+
+@media only screen and (max-width: 800px) {
+    .collapse {
+        background: linear-gradient(black, rgba(48, 48, 48, 0.753)); 
+        padding: 15px; 
+        border-radius: 6px;
+    }
+  }
