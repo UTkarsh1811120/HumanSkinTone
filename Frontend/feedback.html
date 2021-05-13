@@ -7,12 +7,13 @@
         <!-- Bootstrap CSS -->
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-        
+
         <link rel="stylesheet" href="feedback.css">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,900;1,500;1,700&display=swap" rel="stylesheet">
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
         <title>Thank You!</title>
     </head>
     <body>
@@ -38,7 +39,7 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                         <button type="button" class="btn">
-                            <a href="http://" style="text-decoration: none; color: inherit;">Login | Sign-Up</a> 
+                            <a href="http://" style="text-decoration: none; color: inherit;">Login | Sign-Up</a>
                         </button>
                     </li>
                 </ul>
@@ -60,6 +61,37 @@
 
         <section id="b">
             <!-- Review Stars -->
+            <div class="wrapper">
+              <input type="radio" name="rate" id="star-1">
+              <input type="radio" name="rate" id="star-2">
+              <input type="radio" name="rate" id="star-3">
+              <input type="radio" name="rate" id="star-4">
+              <input type="radio" name="rate" id="star-5">
+              <div class="content">
+                <div class="outer">
+                  <div class="emojis">
+                     <li class="slideImg"><img src="emoji-1.png" alt=""></li>
+                    <li><img src="emoji-2.png" alt=""></li>
+                     <li><img src="emoji-3.png" alt=""></li>
+                    <li><img src="emoji-4.png" alt=""></li>
+                     <li><img src="emoji-5.png" alt=""></li>
+                  </div>
+                </div>
+                <div class="stars">
+                  <label for="star-1" class="star-1 fas fa-star"></label>
+                  <label for="star-2" class="star-2 fas fa-star"></label>
+                  <label for="star-3" class="star-3 fas fa-star"></label>
+                  <label for="star-4" class="star-4 fas fa-star"></label>
+                  <label for="star-5" class="star-5 fas fa-star"></label>
+                </div>
+              </div>
+              <div class="footer">
+                <span class="text"></span>
+                <span class="numb"></span>
+              </div>
+            </div>
+
+
         </section>
 
         <section>
@@ -68,9 +100,8 @@
                     <label for="Textarea" style="font-family: 'Raleway', sans-serif; font-weight: 500; font-style: italic; font-size: 16px; color: aliceblue;">Provide us with your valuable feedback here...</label>
                     <textarea class="form-control" id="Textarea" rows="4" style="width: 60vw"></textarea>
                 </div>
-                <button type="button" class="btn">
-                    Submit 
-                </button>
+                <a href="javascript:alert('Thank You')"; class= "btn btn-primary">Submit</a>
+
             </div>
         </section>
 
