@@ -6,7 +6,7 @@
 
 body{
     background-color: var(--primary-color);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.73), rgba(177, 103, 226, 0.6059) 50.00%, rgba(0, 0, 0, 0.73) 100%), url(21b67105-eb2f-4b54-9f9f-53f0a1ef96d2.jpg) no-repeat fixed center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.73), rgba(177, 103, 226, 0.6059) 50.00%, rgba(0, 0, 0, 0.73) 100%), url(Images/21b67105-eb2f-4b54-9f9f-53f0a1ef96d2.jpg) no-repeat fixed center;
     background-size: cover;
     height: 100vh;
 }
@@ -31,7 +31,6 @@ body{
     background-color: brown;    SHOOWS THEIR BACKGROUND COLOR,RESIZE IMAGE ALSO
 
 } */
-=======
 .container{
     margin: 8vh 15vw;
     padding: 30px;

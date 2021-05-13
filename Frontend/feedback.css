@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* *{
+  border: solid 1px;
+} */
+
 :root{
     --primary-color: rgb(177, 103, 226);
 }
@@ -20,6 +26,8 @@
 body{
     background: url(copy-space-blue-circuits-digital-background_23-2148821699.jpg) no-repeat fixed center;
     background-size: cover;
+
+
 }
 
 /* Header */
@@ -32,7 +40,7 @@ body{
 svg{
     position: absolute;
     z-index: -100;
-    width: inherit; 
+    width: inherit;
     height: inherit;
 }
 
@@ -58,13 +66,163 @@ h3::before{
     border-radius: 10px;
     margin: 10vh 15vw;
     width: 70vw;
-    padding: 5vh 5vw;
+    padding: 3vw 5vw;
 }
 
 @media only screen and (max-width: 800px) {
     .collapse {
-        background: linear-gradient(black, rgba(48, 48, 48, 0.753)); 
-        padding: 15px; 
+        background: linear-gradient(black, rgba(48, 48, 48, 0.753));
+        padding: 15px;
         border-radius: 6px;
     }
+  }
+
+  .wrapper{
+    background: #F6F6F6;
+    margin: 0 33vw;
+    width: 34vw;
+    height: 25vw;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: solid rgba(48, 48, 48, 0.753) 10px;
+    padding: 5px;
+    box-shadow: 3px 4px 15px rgba(164, 27, 255, 0.651), -3px 4px 15px rgba(164, 27, 255, 0.651);
+    overflow-y: scroll;
+  }
+  .wrapper .content{
+    padding: 2vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 0 0;
+  }
+  .wrapper .outer{
+    height: 10vw;
+    width:10vw;
+    overflow: hidden;
+  }
+  .outer .emojis{
+    /* height: 500%; */
+    display: flex;
+    flex-direction: column;
+  }
+  .outer .emojis li{
+    /* height: 20%;
+    width: 100%; */
+    list-style: none;
+    transition: all 0.5s ease;
+  }
+  .outer li img{
+    height: 100%;
+    width: 100%;
+  }
+  #star-2:checked ~ .content .emojis .slideImg{
+    margin-top: -10vw;
+  }
+  #star-3:checked ~ .content .emojis .slideImg{
+    margin-top: -20vw;
+  }
+  #star-4:checked ~ .content .emojis .slideImg{
+    margin-top: -30vw;
+  }
+  #star-5:checked ~ .content .emojis .slideImg{
+    margin-top: -40vw;
+  }
+  .wrapper .stars{
+    margin: 1vw 1vw 0 1vw;
+  }
+  .stars label{
+    font-size: 2vw;
+    margin: 0 0.3vw;
+    color: #ccc;
+  }
+  #star-1:hover ~ .content .stars .star-1,
+  #star-1:checked ~ .content .stars .star-1,
+
+  #star-2:hover ~ .content .stars .star-1,
+  #star-2:hover ~ .content .stars .star-2,
+  #star-2:checked ~ .content .stars .star-1,
+  #star-2:checked ~ .content .stars .star-2,
+
+  #star-3:hover ~ .content .stars .star-1,
+  #star-3:hover ~ .content .stars .star-2,
+  #star-3:hover ~ .content .stars .star-3,
+  #star-3:checked ~ .content .stars .star-1,
+  #star-3:checked ~ .content .stars .star-2,
+  #star-3:checked ~ .content .stars .star-3,
+
+  #star-4:hover ~ .content .stars .star-1,
+  #star-4:hover ~ .content .stars .star-2,
+  #star-4:hover ~ .content .stars .star-3,
+  #star-4:hover ~ .content .stars .star-4,
+  #star-4:checked ~ .content .stars .star-1,
+  #star-4:checked ~ .content .stars .star-2,
+  #star-4:checked ~ .content .stars .star-3,
+  #star-4:checked ~ .content .stars .star-4,
+
+  #star-5:hover ~ .content .stars .star-1,
+  #star-5:hover ~ .content .stars .star-2,
+  #star-5:hover ~ .content .stars .star-3,
+  #star-5:hover ~ .content .stars .star-4,
+  #star-5:hover ~ .content .stars .star-5,
+  #star-5:checked ~ .content .stars .star-1,
+  #star-5:checked ~ .content .stars .star-2,
+  #star-5:checked ~ .content .stars .star-3,
+  #star-5:checked ~ .content .stars .star-4,
+  #star-5:checked ~ .content .stars .star-5{
+    color: #fd4;
+  }
+  .wrapper .footer{
+    border-top: 1px solid #ccc;
+    /* background: #f6f6f6; */
+    width: 100%;
+    height: 4vw;
+    padding: 0 20px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .footer span{
+    font-size: 1.4vw;
+  }
+  .footer .text::before{
+    content: "Rate your experience";
+  }
+  .footer .numb::before{
+    content: "0 out of 5";
+  }
+  #star-1:checked ~ .footer .text::before{
+    content: "I just hate it";
+  }
+  #star-1:checked ~ .footer .numb::before{
+    content: "1 out of 5";
+  }
+  #star-2:checked ~ .footer .text::before{
+    content: "I don't like it";
+  }
+  #star-2:checked ~ .footer .numb::before{
+    content: "2 out of 5";
+  }
+  #star-3:checked ~ .footer .text::before{
+    content: "It is Good";
+  }
+  #star-3:checked ~ .footer .numb::before{
+    content: "3 out of 5";
+  }
+  #star-4:checked ~ .footer .text::before{
+    content: "I just like it";
+  }
+  #star-4:checked ~ .footer .numb::before{
+    content: "4 out of 5";
+  }
+  #star-5:checked ~ .footer .text::before{
+    content: "I just love it";
+  }
+  #star-5:checked ~ .footer .numb::before{
+    content: "5 out of 5";
+  }
+  input[type="radio"]{
+    display: none;
   }
