@@ -22,6 +22,16 @@ body{
     color: rgb(0, 0, 0);
 }
 
+/* <<<<<<< patch-1 */
+
+/*
+body{
+    background-image: url("pictures/animation.gif"), url("pictures/background2.jpg"), url("pictures/background1.jpg");   -----> ADD ANY IMAGES FOR BACKFGROUND ACC TO NEED AS IN THIS EXAMPLE
+    background-repeat: no-repeat,no-repeat,repeat;    ----->THIS KNOW ANIMATION.GIF NOT REPEAT ,BACKGROUND2.JPG NOT REPEAT AND THIRD ONE IS REPEAT
+    background-color: brown;    SHOOWS THEIR BACKGROUND COLOR,RESIZE IMAGE ALSO
+
+} */
+=======
 .container{
     position: relative;
     left: 15vw;
@@ -56,3 +66,4 @@ body{
         border-radius: 6px;
     }
   }
+/* >>>>>>> main */
