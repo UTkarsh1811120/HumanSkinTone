@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="index.css">
     
     <title>Human Skintone Detector</title>
 </head>
 <body>
     <!-- Navbar(and SignIn/Register Button) -->
 <!-- <<<<<<< patch-5 -->
-=======
 
 <!-- >>>>>>> main -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: rgba(0, 0, 0, 0.74); height: 65px;">
@@ -50,6 +48,7 @@
     <!-- Header -->
 
     <header>
+      <div class="container a">
         <div id="Header">
             <h1>Human Skintone Detector</h1>
             <br>
@@ -60,26 +59,29 @@
                 We use advance machine learning algorithm to precisely identify the skin tone and provide you with the result stating in which category the given skin tone fall into. You can even look upon your past uploads and results whenever you wish to by registering into our website.
             </p>   
         </div>
+      </div>
     </header>   
 
     <!-- Body -->
 
     <body>
-      <div class="container-fluid">
+      <div class="container b">
         <h1 id="heading"><u>LET'S TEST YOUR TONE</u></h1>
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12" id="accept">
-            <div class=" container-fluid" id="img">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6" id="accept">
+            <div class=" container" id="img">
               <form>
                 <label id="name"><h4 id="heading2"><b>CHOOSE AN IMAGE: </b></h4></label><br><br>
-                <input type="file" id="image" class="container-fluid" multiple="false" accept="image/*" onchange="preview_image(event)" >
+                <input type="file" id="image" class="container" multiple="false" accept="image/*" onchange="preview_image(event)" >
               </form>
             </div>
-            <div class="container-fluid" id="user">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+            <div class="container" id="user">
               <h4 id="heading1"><b>IF YOU WANT TO USE CAMERA<br>CLICK BELOW</b></h4>
-              <button onclick="start()" id="btn" class="btn btn-secondary">START CAMERA</button>
-              <div id="my_camera" class="container-fluid"></div><br>
-              <div id="data" class="container-fluid"></div>
+              <button onclick="start()" id="btn" class="btn">START CAMERA</button>
+              <div id="my_camera" class="container"></div><br>
+              <div id="data" class="container"></div>
             </div>
           </div>
           <div class="col-12 col-sm-12 col-md-12 col-lg-12" id="display">
@@ -88,8 +90,6 @@
           </div>
         </div>
       </div>
-
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script> -->
     </body>
 
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>

@@ -23,24 +23,12 @@ body{
     color: rgb(0, 0, 0);
 }
 
-<<<<<<< HEAD
-/* <<<<<<< patch-1 */
-
-/*
-body{
-    background-image: url("pictures/animation.gif"), url("pictures/background2.jpg"), url("pictures/background1.jpg");   -----> ADD ANY IMAGES FOR BACKFGROUND ACC TO NEED AS IN THIS EXAMPLE
-    background-repeat: no-repeat,no-repeat,repeat;    ----->THIS KNOW ANIMATION.GIF NOT REPEAT ,BACKGROUND2.JPG NOT REPEAT AND THIRD ONE IS REPEAT
-    background-color: brown;    SHOOWS THEIR BACKGROUND COLOR,RESIZE IMAGE ALSO
-
-} */
-.container{
+.a{
     margin: 8vh 15vw;
-=======
+}
 #Header{
     position: relative;
-    left: 15vw;
     margin: 8vh 0;
->>>>>>> 49cb503746d6274f598a736454d9b3965d26a2b0
     padding: 30px;
     color: #d8ebe4;
     width: 70vw;
@@ -63,6 +51,11 @@ body{
     font-family: 'Ubuntu', sans-serif;
     font-style: italic;
 }
+
+.b{
+    width: 70vw;
+}
+
 #results
 {
     width: 350px;
@@ -123,7 +116,6 @@ body{
     font-weight: 700;
 }
 /* <<<<<<< patch-3 */
-=======
 #heading2
 {    
     font-variant: small-caps;
