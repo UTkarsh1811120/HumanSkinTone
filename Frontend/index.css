@@ -6,7 +6,7 @@
 
 body{
     background-color: var(--primary-color);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.73), rgba(177, 103, 226, 0.6059) 50.00%, rgba(0, 0, 0, 0.73) 100%), url(21b67105-eb2f-4b54-9f9f-53f0a1ef96d2.jpg) no-repeat fixed center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.73), rgba(177, 103, 226, 0.6059) 50.00%, rgba(0, 0, 0, 0.73) 100%), url(Images/21b67105-eb2f-4b54-9f9f-53f0a1ef96d2.jpg) no-repeat fixed center;
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -23,9 +23,11 @@ body{
     color: rgb(0, 0, 0);
 }
 
+.a{
+    margin: 8vh 15vw;
+}
 #Header{
     position: relative;
-    left: 15vw;
     margin: 8vh 0;
     padding: 30px;
     color: #d8ebe4;
@@ -49,6 +51,11 @@ body{
     font-family: 'Ubuntu', sans-serif;
     font-style: italic;
 }
+
+.b{
+    width: 70vw;
+}
+
 #results
 {
     width: 350px;
@@ -109,7 +116,6 @@ body{
     font-weight: 700;
 }
 /* <<<<<<< patch-3 */
-=======
 #heading2
 {    
     font-variant: small-caps;
