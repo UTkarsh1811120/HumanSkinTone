@@ -15,7 +15,7 @@
 <!-- <<<<<<< patch-5 -->
 
 <!-- >>>>>>> main -->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: rgba(0, 0, 0, 0.74); height: 65px;">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: rgb(0, 0, 0); height: 65px;">
         <a class="navbar-brand" href="#">HS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,11 +51,8 @@
       <div class="container a">
         <div id="Header">
             <h1>Human Skintone Detector</h1>
-            <br>
-            <br>
             <h4 style="text-align: center;">WELCOME</h4>
-            <br>
-            <p style="padding-left: 4vh;"> 
+            <p style="padding-left: 4vh; font-size: 1.5vw; padding-top: 2vw;"> 
                 We use advance machine learning algorithm to precisely identify the skin tone and provide you with the result stating in which category the given skin tone fall into. You can even look upon your past uploads and results whenever you wish to by registering into our website.
             </p>   
         </div>
@@ -68,24 +65,35 @@
       <div class="container b">
         <h1 id="heading"><u>LET'S TEST YOUR TONE</u></h1>
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-6" id="accept">
-            <div class=" container" id="img">
-              <form>
-                <label id="name"><h4 id="heading2"><b>CHOOSE AN IMAGE: </b></h4></label><br><br>
-                <input type="file" id="image" class="container" multiple="false" accept="image/*" onchange="preview_image(event)" >
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6" id="accept">
+            <div id="img">
+              <form style="text-align: center;">
+                <label id="name">
+                  <h4 id="heading2"><b>CHOOSE AN IMAGE: </b></h4>
+                </label>
+                <br>
+                <br>
+                <input type="file" id="image" multiple="false" accept="image/*" onchange="preview_image(event)" style="padding-left: 10vw;">
               </form>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
-            <div class="container" id="user">
-              <h4 id="heading1"><b>IF YOU WANT TO USE CAMERA<br>CLICK BELOW</b></h4>
-              <button onclick="start()" id="btn" class="btn">START CAMERA</button>
-              <div id="my_camera" class="container"></div><br>
-              <div id="data" class="container"></div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <div id="user">
+              <h4 id="heading1">
+                <b>IF YOU WANT TO USE CAMERA<br>CLICK BELOW</b>
+              </h4>
+              <button onclick="start()" id="btn" class="btn">
+                START CAMERA
+              </button>
+              <div id="my_camera"></div>
+              <br>
+              <div id="data"></div>
             </div>
           </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12" id="display">
-            <h3 style="margin-top: 10px"><i>IMAGE TO BE TESTED APPEARS BELOW</i></h3>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12"  style="text-align: center;">
+            <h3  id="display">
+              <i>IMAGE TO BE TESTED APPEARS BELOW</i>
+            </h3>
             <img id="results" class="img-fluid"></img>
           </div>
         </div>
@@ -97,12 +105,23 @@
         
           function start() 
           {
-            Webcam.set({
-              height:150,
-              width:200,
+            if(window.innerWidth < 800){
+              Webcam.set({
+              height:135,
+              width:160,
               image_format: 'jpeg',
-              jpeg_quality: 90
+              jpeg_quality: 100
              });
+            }
+            else{
+              Webcam.set({
+              height:270,
+              width:320,
+              image_format: 'jpeg',
+              jpeg_quality: 100
+             });
+
+            }
              Webcam.attach('#my_camera');
             document.getElementById('data').innerHTML = '<input type=button value="Take Snapshot"  onClick="take_snapshot()">';
             var div = document.getElementById('btn');

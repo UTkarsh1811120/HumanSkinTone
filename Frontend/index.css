@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Trirong&family=Poppins:ital,wght@0,400;1,500&family=Ubuntu:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
 
+/* *{
+  border: solid 1px;
+} */
+
+
 :root{
     --primary-color: rgb(177, 103, 226);
 }
@@ -29,7 +34,7 @@ body{
 #Header{
     position: relative;
     margin: 8vh 0;
-    padding: 30px;
+    padding: 2vw;
     color: #d8ebe4;
     width: 70vw;
     background-color: rgba(202, 145, 255, 0.349);
@@ -44,22 +49,23 @@ body{
     font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-weight: 700;
-    font-size: 46px;
+    font-size: 4vw;
+    padding-bottom: 2vw;
 }
 
 #Header p, h4{
     font-family: 'Ubuntu', sans-serif;
     font-style: italic;
+    font-size: 2vw;
 }
 
-.b{
-    width: 70vw;
-}
-
+/* .b{
+    width: 80vw;
+} */
 #results
 {
-    width: 350px;
-    height:350px;
+    width: 36vw;
+    height: 27vw;
 }
 #my_camera
 {
@@ -71,27 +77,21 @@ body{
 }
 #display
 {
-    text-align: center;
     font-family: "Trirong", serif;
     color: white;
-    margin-top: 40px;
+    margin-top: 2vw;
+    text-decoration: underline;
+    font-size: 2vw;
+    font-weight: 700;
 }
 #img
 {
-    float: left;
-    width: 50%;
+    padding: 10px 0;
 }
 #user
 {
     text-align: center;    
-    float: left;
-    width: 50%;
-    font-family: "Trirong", serif;
-}
-.btn-light
-{
-    margin-top: 8px;
-    text-align: center;
+    padding: 10px 0;
 }
 #heading
 {    
@@ -101,9 +101,9 @@ body{
     font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-weight: 700;
-    font-size: 46px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    font-size: 4vw;
+    margin-top: 5.4vw;
+    margin-bottom: 5.4vw;
 }
 #heading1
 {    
@@ -114,8 +114,8 @@ body{
     font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-weight: 700;
+    font-size: 2vw;
 }
-/* <<<<<<< patch-3 */
 #heading2
 {    
     font-variant: small-caps;
@@ -125,6 +125,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-weight: 700;
+    font-size: 2vw;
 }
 #image
 {
@@ -134,4 +135,11 @@ body{
 {
     margin-top: 20px;
 }
-/* >>>>>>> main */
+
+@media only screen and (max-width: 800px) {
+    .collapse {
+        background: linear-gradient(black, rgba(48, 48, 48, 0.753));
+        padding: 15px;
+        border-radius: 6px;
+    }
+  }

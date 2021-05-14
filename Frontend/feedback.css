@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-<<<<<<< HEAD
 
 /* *{
   border: solid 1px;
 } */
 
-=======
->>>>>>> 49cb503746d6274f598a736454d9b3965d26a2b0
 :root{
     --primary-color: rgb(177, 103, 226);
 }
@@ -27,7 +24,7 @@
 /* Background */
 
 body{
-    background: url(copy-space-blue-circuits-digital-background_23-2148821699.jpg) no-repeat fixed center;
+    background: url(Images/copy-space-blue-circuits-digital-background_23-2148821699.jpg) no-repeat fixed center;
     background-size: cover;
 
 
@@ -80,7 +77,6 @@ h3::before{
     }
   }
 
-<<<<<<< HEAD
   .wrapper{
     background: #F6F6F6;
     margin: 0 33vw;
@@ -107,53 +103,20 @@ h3::before{
   }
   .outer .emojis{
     /* height: 500%; */
-=======
-
-  .wrapper{
-    background: #f6f6f6;
-    max-width: 360px;
-    width: 100%;
-    border-radius: 10px;
-    left: 4em;
-    right:50%;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.2);
-  }
-  .wrapper .content{
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .wrapper .outer{
-    height: 135px;
-    width: 135px;
-    overflow: hidden;
-  }
-  .outer .emojis{
-    height: 500%;
->>>>>>> 49cb503746d6274f598a736454d9b3965d26a2b0
     display: flex;
     flex-direction: column;
   }
   .outer .emojis li{
-<<<<<<< HEAD
     /* height: 20%;
     width: 100%; */
     list-style: none;
     transition: all 0.5s ease;
-=======
-    height: 20%;
-    width: 100%;
-    list-style: none;
-    transition: all 0.3s ease;
->>>>>>> 49cb503746d6274f598a736454d9b3965d26a2b0
   }
   .outer li img{
     height: 100%;
     width: 100%;
   }
   #star-2:checked ~ .content .emojis .slideImg{
-<<<<<<< HEAD
     margin-top: -10vw;
   }
   #star-3:checked ~ .content .emojis .slideImg{
@@ -171,25 +134,6 @@ h3::before{
   .stars label{
     font-size: 2vw;
     margin: 0 0.3vw;
-=======
-    margin-top: -135px;
-  }
-  #star-3:checked ~ .content .emojis .slideImg{
-    margin-top: -270px;
-  }
-  #star-4:checked ~ .content .emojis .slideImg{
-    margin-top: -405px;
-  }
-  #star-5:checked ~ .content .emojis .slideImg{
-    margin-top: -540px;
-  }
-  .wrapper .stars{
-    margin-top: 30px;
-  }
-  .stars label{
-    font-size: 30px;
-    margin: 0 3px;
->>>>>>> 49cb503746d6274f598a736454d9b3965d26a2b0
     color: #ccc;
   }
   #star-1:hover ~ .content .stars .star-1,
@@ -230,30 +174,17 @@ h3::before{
   }
   .wrapper .footer{
     border-top: 1px solid #ccc;
-<<<<<<< HEAD
     /* background: #f6f6f6; */
     width: 100%;
     height: 4vw;
-=======
-    background: #f2f2f2;
-    width: 100%;
-    height: 55px;
->>>>>>> 49cb503746d6274f598a736454d9b3965d26a2b0
     padding: 0 20px;
     border-radius: 0 0 10px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-<<<<<<< HEAD
-  
   .footer span{
     font-size: 1.4vw;
-=======
-  .footer span{
-    font-size: 17px;
-    font-weight: 400;
->>>>>>> 49cb503746d6274f598a736454d9b3965d26a2b0
   }
   .footer .text::before{
     content: "Rate your experience";
@@ -274,11 +205,7 @@ h3::before{
     content: "2 out of 5";
   }
   #star-3:checked ~ .footer .text::before{
-<<<<<<< HEAD
     content: "It is Good";
-=======
-    content: "This is awesome";
->>>>>>> 49cb503746d6274f598a736454d9b3965d26a2b0
   }
   #star-3:checked ~ .footer .numb::before{
     content: "3 out of 5";
@@ -297,8 +224,4 @@ h3::before{
   }
   input[type="radio"]{
     display: none;
-<<<<<<< HEAD
   }
-=======
-  }
->>>>>>> 49cb503746d6274f598a736454d9b3965d26a2b0
