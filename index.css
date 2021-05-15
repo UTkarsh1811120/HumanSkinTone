@@ -266,7 +266,7 @@ body{
     
 }
 
-.terms{
+.terms, .cr{
     width:100%;
     background:rgb(0, 0, 0);
     color: rgb(192, 124, 255);
