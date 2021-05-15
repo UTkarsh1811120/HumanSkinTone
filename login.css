@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url('Images/3.jpg');
+}
+
+input{
+    outline: none;
+    border: none;
+    display: block;
+    width: 80%;
+    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.1vw;
+    background: transparent;
+    color: #f3eaea;
+    font-weight: 50px;
+    padding: 2px 0px;
+}
+.heading{
+    width: 80%;
+}
+
+.heading h1{
+    margin: 9px;
+    margin-bottom: 15px;
+    margin-left: 25%;
+    font-size:4vw;
+    font-weight: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #c58c8c;
+}
+
+.container{
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 90%;
+    background-color: rgba(160, 120, 253, 0.3);
+    display: flex;
+    box-shadow: darkgrey;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 55%;
+    
+}
+.alink:link{
+    font-size: x-large;
+    text-decoration: none;
+}
+
+
+.image{
+    width: 45%;
+
+}
+
+
+.img{
+    width: 100% ;
+    height: 100%;
+    object-fit: cover;
+}
+.wrap2{
+    width: 80%;
+    position: relative;
+    border-bottom: 2px solid #bfb8bb;
+    margin-bottom: 10px;
+
+}
+
+.forgot{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    color: beige;
+}
+
+label{
+    font-size: 3vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: #d8d8e6;
+    line-height: 1.5;
+    text-transform: capitalize;
+    display: flex;
+    text-align: center;
+    width: 80%;
+    border-bottom: none;
+    padding: 15px 2px 0px 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.btn{
+    margin-top:20px ;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-size: 23px;
+    border: none;
+    background: #b36161;
+    color:black;
+    transition: 0.4s;
+}
+.btn:hover{
+    background: #4b2888;
+}
+
+.icon{
+    margin: 6px;
+    color: #ece1e1;
+}
+
+@media(max-width:768px){
+    .container{
+        width: 100%;
+        height: 100vh !important;
+        position: static;
+        transform: translate(0,0);
+    }
+}
+@media(max-width:1000px){
+    .image{
+        display: none;
+    }
+    .container{
+        height: 95vh;
+    }
+    .form{
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    .wrap{
+        flex-direction: column;
+    }
+    .f1.f2{
+        width: 100%;
+        margin:0px;
+    }
+}
