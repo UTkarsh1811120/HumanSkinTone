@@ -28,7 +28,7 @@ input{
 }
 
 .heading h1{
-    margin: 9px;
+    margin: 0.5vw;
     margin-bottom: 15px;
     margin-left: 25%;
     font-size: 4vw;
@@ -53,12 +53,12 @@ input{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 55%;
+    width: 60%;
     
 }
 
 .image{
-    width: 45%;
+    width: 40%;
 
 }
 
@@ -103,11 +103,10 @@ label{
 
 .btn{
     margin-top:20px ;
-    width: 200px;
-    height: 50px;
+    width: 20vw;
+    height: 5vw;
     border-radius: 40px;
-    font-size: 20px;
-    font-size: 23px;
+    font-size: 2.7vw;
     border: none;
     background: #b36161;
     color:black;
@@ -121,15 +120,14 @@ label{
     color: #ece1e1;
 }
 
-.forgot{
-    font-size: large;
+/* .forgot{
+    font-size: 2vw;
     font-family: 'Courier New', Courier, monospace;
     color: beige;
 }
 .alink:link{
-    font-size: x-large;
     text-decoration: none;
-}
+} */
 
 @media(max-width:768px){
     .container{

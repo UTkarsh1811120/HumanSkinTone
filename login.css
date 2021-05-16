@@ -25,10 +25,10 @@ input{
 }
 
 .heading h1{
-    margin: 9px;
+    /* margin: 9px; */
     margin-bottom: 15px;
-    margin-left: 25%;
-    font-size:4vw;
+    text-align: center;
+    font-size:3vw;
     font-weight: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #c58c8c;
@@ -45,7 +45,7 @@ input{
     display: flex;
     box-shadow: darkgrey;
 }
-.form{
+form{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,13 +79,13 @@ input{
 }
 
 .forgot{
-    font-size: large;
+    font-size: 2vw;
     font-family: 'Courier New', Courier, monospace;
     color: beige;
 }
 
 label{
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-family: 'Times New Roman', Times, serif;
     color: #d8d8e6;
     line-height: 1.5;
@@ -102,11 +102,10 @@ label{
 
 .btn{
     margin-top:20px ;
-    width: 200px;
-    height: 50px;
+    width: 20vw;
+    height: 5vw;
     border-radius: 40px;
-    font-size: 20px;
-    font-size: 23px;
+    font-size: 2.8vw;
     border: none;
     background: #b36161;
     color:black;
@@ -136,7 +135,7 @@ label{
     .container{
         height: 95vh;
     }
-    .form{
+    form{
         width: 100%;
     }
 }
